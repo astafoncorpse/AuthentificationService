@@ -62,7 +62,7 @@ namespace AuthentificationService.Controllers
             return userViewModel;
 
         }
-        [HttpPost]
+        [HttpGet]
         [Route("authenticate")]
         public async Task <UserViewModel> Authenticate(string login, string password)
         {

@@ -37,7 +37,7 @@ namespace AuthentificationService
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
 
-
+            services.AddSingleton<IUserRepository, UserRepository>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

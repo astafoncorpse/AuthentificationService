@@ -65,6 +65,7 @@ namespace AuthentificationService
 
         public User GetByLogin(string login)
         {
+
             return _users.FirstOrDefault(v => v.Login == login);
         }
 

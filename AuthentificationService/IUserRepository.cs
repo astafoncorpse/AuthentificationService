@@ -1,11 +1,11 @@
-﻿namespace AuthentificationService
+﻿using System.Collections.Generic;
+
+namespace AuthentificationService
 {
     public interface IUserRepository
     {
-      
-        void IEnumerable<User> GetAll();
-
-         void UserGetByLogin(string login);
+        User GetByLogin(string login);
+        IEnumerable<User> GetAll();
     }
 
 }
