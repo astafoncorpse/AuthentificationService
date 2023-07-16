@@ -1,8 +1,9 @@
-﻿using System;
+﻿using AuthentificationService.BLL.Interfaces;
+using System;
 using System.IO;
 using System.Threading;
 
-namespace AuthentificationService
+namespace AuthentificationService.BLL.Models
 {
     public class Logger : ILogger
     {

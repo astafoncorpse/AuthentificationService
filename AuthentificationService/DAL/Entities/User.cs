@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AuthentificationService
+namespace AuthentificationService.DAL.Entities
 {
     public class User
     {

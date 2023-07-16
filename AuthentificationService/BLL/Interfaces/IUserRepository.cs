@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using AuthentificationService.DAL.Entities;
+using System.Collections.Generic;
 
-namespace AuthentificationService
+namespace AuthentificationService.BLL.Interfaces
 {
     public interface IUserRepository
     {

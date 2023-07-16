@@ -1,7 +1,8 @@
-﻿using System;
+﻿using AuthentificationService.DAL.Entities;
+using System;
 using System.Net.Mail;
 
-namespace AuthentificationService
+namespace AuthentificationService.PLL.Views
 {
     public class UserViewModel
     {
@@ -9,8 +10,8 @@ namespace AuthentificationService
         public string FullName { get; set; }
         public bool FromRussia { get; set; }
 
-        public UserViewModel(User user) 
-        { 
+        public UserViewModel(User user)
+        {
             Id = user.Id;
             FullName = GetFullName(user.FirstName, user.LastName);
             FromRussia = GetFromRussiaValue(user.Email);
@@ -18,7 +19,7 @@ namespace AuthentificationService
 
         public string GetFullName(string firstName, string lastName)
         {
-            return String.Concat(firstName, " ", lastName);
+            return string.Concat(firstName, " ", lastName);
         }
 
         public bool GetFromRussiaValue(string email)

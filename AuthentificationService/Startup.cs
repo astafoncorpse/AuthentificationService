@@ -1,3 +1,6 @@
+using AuthentificationService.BLL.Interfaces;
+using AuthentificationService.BLL.Models;
+using AuthentificationService.DAL.Repositories;
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,7 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-
+using ILogger = AuthentificationService.BLL.Interfaces.ILogger;
 
 namespace AuthentificationService
 {

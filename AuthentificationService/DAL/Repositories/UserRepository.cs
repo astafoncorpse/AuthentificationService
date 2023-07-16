@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AuthentificationService.BLL.Interfaces;
+using AuthentificationService.DAL.Entities;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace AuthentificationService
+namespace AuthentificationService.DAL.Repositories
 {
     public class UserRepository : IUserRepository
-        
+
     {
         private readonly List<User> _users = new List<User>();
 
@@ -69,7 +71,7 @@ namespace AuthentificationService
             return _users.FirstOrDefault(v => v.Login == login);
         }
 
-      
+
     }
 
 
