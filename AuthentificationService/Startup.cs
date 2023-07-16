@@ -73,6 +73,8 @@ namespace AuthentificationService
 
             app.UseRouting();
 
+            app.UseLogMiddleware();
+
             app.UseAuthentication();
 
             app.UseAuthorization();
