@@ -21,7 +21,8 @@ namespace AuthentificationService.BLL.Models
 
         public async Task Invoke(HttpContext httpContext)
         {
-            _logger.WriteEvent("Я твой Middleware");
+            ///ответ из модуля 34
+            _logger.WriteEvent("IP-адрес клиента: " + httpContext.Connection.RemoteIpAddress.ToString());
 
 
             await _next(httpContext);
